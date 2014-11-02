@@ -1,8 +1,22 @@
 import rootpy
 from rootpy.io import root_open
 import root_numpy
+from numpy.lib import recfunctions
 from utils.functions import identity
 from utils.matrix import rec_to_mat
+
+#def identity(x):
+#    """ 
+#    Placeholder for the identity function.
+#    """
+#    return x
+#
+#def rec_to_mat(rec):
+#    if rec.dtype.names is not None:
+#        rec = rec.astype([(k, np.float64) for k in rec.dtype.names])
+#        return np.mat(rec.view((np.float64, len(rec.dtype.names))))
+#    else:
+#        return np.matrix(rec.astype(np.float64))
 
 class tree_reader(object):
     """
